@@ -282,16 +282,15 @@ test('Trigger the errors on Sign In Page', async t =>
 
     await t 
         //I type the Email
-        .typeText(page.txt_RegisteredEmail, data.registeredEmail, {replace: true})
+        .typeText(page.registeredEmail_input, data.registeredEmail, {replace: true})
         //Assertion
-        .expect(page.txt_RegisteredEmail.value).eql(data.registeredEmail)
+        .expect(page.registeredEmail_input.value).eql(data.registeredEmail)
         .click(page.signInAuthBtn)
 
     await t
         //Error
         .expect(page.authenticationError_msg.innerText).contains("Password is required.")
         .expect(page.authenticationError_msg.exists).ok()
-        .expect(page.accountError_msg.exists).notOk()
         .takeScreenshot("PasswordRequired")
 
 
@@ -319,7 +318,6 @@ test('Trigger the errors on Sign In Page', async t =>
         //Error
         .expect(page.authenticationError_msg.innerText).contains("An email address required.")
         .expect(page.authenticationError_msg.exists).ok()
-        .expect(page.accountError_msg.exists).notOk()
         .takeScreenshot("RemoveEmail")
 
     await t
@@ -378,8 +376,8 @@ test('Validate that a password can be recovered with a not valid email', async t
 
     await t
 
-        .typeText(page.registeredEmail_input, data.email)
-        .expect(page.registeredEmail_input.value).contains(data.email)
+        .typeText(page.registeredEmail_input, data.wrong_email)
+        .expect(page.registeredEmail_input.value).contains(data.wrong_email)
 
         .click(page.retrievePwdBtn)
         .expect(page.alertDanger.exists).ok()
@@ -393,11 +391,11 @@ test('Validate changing my account information', async t =>{
         .click(page.signIn_link)
 
     await t
-        .typeText(page.registeredEmail_input, data.registeredEmail)
-        .expect(page.registeredEmail_input.value).contains(data.registeredEmail)
+        .typeText(page.registeredEmail_input, data.email)
+        .expect(page.registeredEmail_input.value).contains(data.email)
 
-        .typeText(page.password_input, data.pwd)
-        .expect(page.password_input.value).contains(data.pwd)
+        .typeText(page.registeredPwd_input, data.pwd)
+        .expect(page.registeredPwd_input.value).contains(data.pwd)
 
         .click(page.signInAuthBtn)
     
@@ -412,12 +410,10 @@ test('Validate changing my account information', async t =>{
     await t
 
         .typeText(page.currentPwd, data.pwd)
-        .expect(password_input.currentPwd).contains(data.pwd)
+        //.expect(page.currentPwd).contains(data.pwd)
         .click(page.submitInfo)
 
     await t
 
         .expect(page.alertPersonalSuccess.exists).ok()
-
-        
 });
