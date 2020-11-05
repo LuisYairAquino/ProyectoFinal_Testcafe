@@ -416,6 +416,4 @@ test('Validate changing my account information', async t =>{
     await t
 
         .expect(page.alertPersonalSuccess.exists).ok()
-
-        
 });
