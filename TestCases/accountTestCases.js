@@ -1,5 +1,5 @@
-import page from './pageObject';
-import { data } from './data';
+import page from '../PageObject/pageObject';
+import { data } from '../PageObject/data';
 
 fixture('E2E Testing for Account Section')
     .page ('http://automationpractice.com');
@@ -18,7 +18,7 @@ test('Validate that the email address is empty in order to click on Create an ac
         .click(page.createAccountBtn)
     
     await t
-        //Alert danger7error message is shown
+        //Alert danger/error message is shown
         .expect(page.accountError_msg.innerText).eql("Invalid email address.")
         .expect(page.accountError_msg.exists).ok()
         .takeScreenshot("InvalidEmail_Alert")
@@ -95,7 +95,7 @@ test('Validate that when an account is created it is successful', async t =>
        .click(page.createAccountBtn)
         
     await t 
-        //Form Inputd
+        //Form Fields
         .typeText(page.firstName_input, data.firstName)
         //Assert that the data is correct
         .expect(page.firstName_input.value).contains( data.firstName)
@@ -111,7 +111,7 @@ test('Validate that when an account is created it is successful', async t =>
         .typeText(page.address_input, data.pbox)
         //Assert that the data is correct
         .expect(page.address_input.value).contains( data.pbox)
-        .takeScreenshot("AddressScreenshot")
+        .takeScreenshot("Address_Screenshot")
 
         .typeText(page.city_input, data.city)
         //Assert that the data is correct
@@ -130,11 +130,6 @@ test('Validate that when an account is created it is successful', async t =>
         .typeText(page.mobilePhone_input, data.mobilePhone)
         //Assert that the data is correct
         .expect(page.mobilePhone_input.value).eql(data.mobilePhone)
-
-        //.typeText(page.alias_input, data.alias)
-        //Assert that the data is correct
-        //.expect(page.alias_input.value).contains(data.alias)
-        //.takeScreenshot("Form")
 
         //click on 'Register'
         .click(page.registerAccountBtn)
@@ -155,7 +150,7 @@ test('Validate that when an account is created it is successful', async t =>
 });
 
 //TC_05
-test('Try to login into the account usign invalid values', async t =>
+test('Validate that do login into the account usign invalid credentials', async t =>
 {
     await t
         //I maximize the Screen.
@@ -181,7 +176,7 @@ test('Try to login into the account usign invalid values', async t =>
         .click(page.signInAuthBtn)
 
     await t
-        //Expecting an error message
+        //Error
         .expect(page.authenticationError_msg.innerText).contains("Invalid email address.")
         .expect(page.authenticationError_msg.exists).ok()
         .takeScreenshot("InvalidEmailAddress")
@@ -193,7 +188,7 @@ test('Try to login into the account usign invalid values', async t =>
         .click(page.signInAuthBtn)
 
     await t
-        //Expecting an error message
+        //Error
         .expect(page.authenticationError_msg.innerText).contains("Password is required.")
         .expect(page.authenticationError_msg.exists).ok()
         .takeScreenshot("PwdRequired")
@@ -225,7 +220,7 @@ test('Try to login into the account usign invalid values', async t =>
 });
 
 //TC_06
-test('Trigger the errors on Sign In Page', async t =>
+test('Validate errors in Sign In Page', async t =>
 {
     await t
         //I maximize the Screen.
@@ -248,7 +243,7 @@ test('Trigger the errors on Sign In Page', async t =>
         .click(page.createAccountBtn)
     
     await t
-        //Expecting an error message
+        //Error
         .expect(page.accountError_msg.innerText).contains("Invalid email address.")
         .expect(page.accountError_msg.exists).ok()
         .expect(page.authenticationError_msg.innerText).contains("An email address required.")
@@ -371,15 +366,18 @@ test('Validate that a password can be recovered with a not valid email', async t
         .click(page.signIn_link)
 
     await t
-
+        //Click on Forgot my Password link
         .click(page.forgotPwd_link)
 
     await t
-
+        //I type invalid credentials
         .typeText(page.registeredEmail_input, data.wrong_email)
         .expect(page.registeredEmail_input.value).contains(data.wrong_email)
 
+        //Click en Retrieve Password Button
         .click(page.retrievePwdBtn)
+
+        //Error Message 
         .expect(page.alertDanger.exists).ok()
         .takeScreenshot("NotValidEmailPwdAlertImg")
         
@@ -400,11 +398,12 @@ test('Validate changing my account information', async t =>{
         .click(page.signInAuthBtn)
     
     await t
-
+        //Validate my name as Logged user
         .click(page.userName_link)
 
     await t
 
+        //Click on My Information
         .click(page.myInformation)
 
     await t

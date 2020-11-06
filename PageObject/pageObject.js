@@ -6,9 +6,10 @@ class Page
     {
         //Home Page
         this.signIn_link = Selector('a').withText('Sign in');
-        this.women_link = Selector('a').withText('Women');
-        this.dresses_link = Selector('a').withText('Dresses');
-        this.tshirts_link = Selector('a').withText('T-shirts');
+        this.women_link = Selector('a').withText('WOMEN');
+        this.sections_div = Selector('#center_column > div.content_scene_cat > div > div > span');
+        this.dresses_link = Selector('a').withText('DRESSES');
+        this.tshirts_link = Selector('a').withText('T-SHIRTS');
         this.logo_link = Selector('#header_logo > a > img');
         this.searchBox_input = Selector('#search_query_top');
         this.submitSearch_btn = Selector('#searchbox > button');
@@ -55,6 +56,28 @@ class Page
         this.submitInfo = Selector('button').withText('Save')
         this.alertPersonalSuccess = Selector('#center_column > div > p')
 
+        //Items
+        this.items = Selector('#center_column > ul > li > div > div.left-block > div > a.product_img_link > img')
+        this.addToCart_link = Selector('#center_column > ul > li:nth-child(1) > div > div.right-block > div.button-container > a.button.ajax_add_to_cart_button.btn.btn-default > span')
+        this.item_Link = Selector('#center_column > ul > li:nth-child(1) > div > div.right-block > div.button-container > a.button.lnk_view.btn.btn-default > span')
+        this.addToCartBtn = Selector('a').withText('Add to cart')
+        this.itemInMyCar_div = Selector('#layer_cart > div.clearfix > div.layer_cart_cart.col-xs-12.col-md-6')
+        this.proceedBtn = Selector('a').withText('Proceed to checkout')
+        this.proceedSummaryBtn = Selector('#center_column > p.cart_navigation.clearfix > a.button.btn.btn-default.standard-checkout.button-medium')
+        this.summaryPage = Selector('#cart_title')
+        this.proccedAddressesBtn = Selector('#center_column > form > p > button')
+        this.addAnotherItemBtn = Selector('#cart_quantity_up_3_13_0_403043')
+        this.trashBtn = Selector('.icon-trash')
+        this.addressesPage = Selector('#center_column > h1')
+        this.numberItems_input = Selector('#product_3_13_0_403043 > td.cart_quantity.text-center > input.cart_quantity_input.form-control.grey')
+        this.shippingPage = Selector('#carrier_area > h1')
+        this.proceedShippingBtn = Selector('#form > p > button')
+        this.radioBtn = Selector('#delivery_option_403043_0')
+        this.terms_checkBox = Selector('#cgv')
+        this.paymentPage = Selector('#center_column > h1')
+        this.payByBankBtn = Selector('#HOOK_PAYMENT > div:nth-child(1) > div > p > a')
+        this.confirmOrder = Selector('#cart_navigation > button')
+        this.orderCompleted_div = Selector('#center_column > div > p')
     }
 }
 

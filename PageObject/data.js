@@ -2,6 +2,8 @@ let rndNumber = Math.random().toString(36).substr(1,4);
 
 let data = {
     email: 'luisin' + rndNumber + '@mailinator.com',
+    existedAccount: '12345@12345.com',
+    pwdExisted: '12345',
     wrong_email: "122342hotmail",
     firstName: "Luis",
     lastName: "Aquino",
@@ -15,7 +17,13 @@ let data = {
     alias : "Final Project",
     registeredEmail: 'luisin@mailinator.com',
     notFoundItem: 'Boxers',
-    ExistentItem: 'Dress'
+    availableItem: 'Blouse',
+    url: 'http://automationpractice.com',
+    womenPage: 'id_category=3',
+    dressesPage: 'id_category=8',
+    tshirtsPage: 'id_category=5',
+    expectedItems: 5,
+    url_categories: "id_category="
 }
 
 export {data}
