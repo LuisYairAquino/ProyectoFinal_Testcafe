@@ -12,7 +12,7 @@ let forCounter = 0;
 let counter = 0;
 
 //TC_01
-test('Open Women, select Dresses, check all listed elements read Dress', async t =>
+test('Validate that select Dresses and check the list of elements', async t =>
 {
     await t
         //I maximize the Screen
@@ -56,7 +56,7 @@ test('Open Women, select Dresses, check all listed elements read Dress', async t
  });
 
 //TC_02
-test('Validate shpping cart and payment', async t =>
+test('Validate shopping cart and payment', async t =>
 {
     await t
         //I maximize the Screen

@@ -358,6 +358,7 @@ test('Validate that a password can be recovered with a valid email', async t =>{
         
 });
 
+//TC_08
 test('Validate that a password can be recovered with a not valid email', async t =>{
     await t 
         //I maximize the Screen.
@@ -383,6 +384,7 @@ test('Validate that a password can be recovered with a not valid email', async t
         
 });
 
+//TC_09
 test('Validate changing my account information', async t =>{
     await t 
 
