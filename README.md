@@ -53,5 +53,5 @@ I'm greateful with QA Minds for this bootcamp, this allowed to me to learn more 
 Luis Yair Aquino Melo - [@LinkedIn](https://www.linkedin.com/in/luis-yair-aquino-melo-1a291391/) - luisyairam.it@gmail.com
 
 <p align="center">
-<img align='right' src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="190">
+    <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="190">
 </p>
