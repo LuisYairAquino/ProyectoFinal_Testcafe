@@ -179,7 +179,7 @@ test('Validate that do login into the account usign invalid credentials', async 
         //Error
         .expect(page.authenticationError_msg.innerText).contains("Invalid email address.")
         .expect(page.authenticationError_msg.exists).ok()
-        .takeScreenshot("InvalidEmailAddress")
+        .takeScreenshot("InvalidEmail_Address2")
 
     await t 
         //I type the Email
@@ -387,7 +387,9 @@ test('Validate that a password can be recovered with a not valid email', async t
 //TC_09
 test('Validate changing my account information', async t =>{
     await t 
-
+        //I maximize the Screen.
+        .maximizeWindow()
+        //Click on Sign In.
         .click(page.signIn_link)
 
     await t
