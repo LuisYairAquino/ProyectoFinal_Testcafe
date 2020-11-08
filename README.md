@@ -10,7 +10,7 @@
 
 ![Screenshot of the page](automationpractice.PNG)
 
-* **Install Node.js**: You have to install [Node.js](https://nodejs.org/es/download/), please ensure Node.js and [npm](https://www.npmjs.com/) are installed on your computer.
+* 🔑 **Install Node.js**: You have to install [Node.js](https://nodejs.org/es/download/), please ensure Node.js and [npm](https://www.npmjs.com/) are installed on your computer.
 * 🔑 **How to set up?**: To install *TestCafe*: `npm install -g testcafe`
 * 🔍 **How to verify the version?**: To verify the node.js version you have to type: `node -v` and to verify testcafe version: `testcafe -v
 * 📓 **The IDE is optional**: For this project I was working with [Visual Studio Code](https://code.visualstudio.com/download)
@@ -32,7 +32,7 @@ In this repository you are able to find different kind of E2E testing on the 'ht
   
 ## How to run an specifi Script?
 
-*Browsers: chrome, firefox, edge*
+*Browsers: chrome, firefox, edge*</br>
 <a href="https://chrome.google.com/webstore/detail/github-file-icons/ficfmibkjjnpogdcfhfokmihanoldbfe">
   <img border="0" src="https://developer.chrome.com/webstore/images/ChromeWebStore_BadgeWBorder_v2_496x150.png" width="172">
 </a>
