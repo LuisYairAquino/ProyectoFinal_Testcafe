@@ -6,15 +6,9 @@
     </a>
 </p>
 
-<p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-</p>
-
 ## Pre-requisites
 
-[![Product Name Screen Shot][product-screenshot]](http://automationpractice.com)
+![Screenshot of the example product page](automationpractice.png)
 
 * **Install Node.js**: You have to install [Node.js](https://nodejs.org/es/download/), please ensure Node.js and [npm](https://www.npmjs.com/) are installed on your computer.
 * **How to set up?**: To install *TestCafe*: `npm install -g testcafe`
