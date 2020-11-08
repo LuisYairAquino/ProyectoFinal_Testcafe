@@ -1,4 +1,4 @@
-# Proyecto Final de Testcafe (Bootcamp QA Minds) <img src="https://giphy.com/gifs/memecandy-LmNwrBhejkK9EFP504/giphy.gif" width="50"></h2>
+# Proyecto Final de Testcafe (Bootcamp QA Minds) <img src="https://media2.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif?cid=ecf05e47igdv6iilmuicqfnlt51u8t2qbo67kf85lodhcakk&rid=giphy.gif" width="50"></h2>
 
 <p align="center">
     <a href="https://devexpress.github.io/testcafe">
