@@ -1,7 +1,7 @@
 # Proyecto Final de Testcafe (Bootcamp QA Minds) <img src="https://media2.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif?cid=ecf05e47igdv6iilmuicqfnlt51u8t2qbo67kf85lodhcakk&rid=giphy.gif" width="50"></h2>
 
 <p align="center">
-    <a href="https://devexpress.github.io/testcafe">
+    <a href="https://qaminds.com/">
         <img src="https://qaminds.com/wp-content/uploads/2017/10/Logo_QAmindsLAB2-360x235.png" alt="qaminds">
     </a>
 </p>
