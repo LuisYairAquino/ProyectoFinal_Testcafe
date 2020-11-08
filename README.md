@@ -50,7 +50,7 @@ In this repository you are able to find different kind of E2E testing on the 'ht
 
 I'm greateful with QA Minds for this bootcamp, this allowed to me to learn more about the tool and how to implement it in my futures jobs
 
-Luis Yair Aquino Melo - <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /> | ```[Luis Yair Aquino Melo](https://www.linkedin.com/in/luis-yair-aquino-melo-1a291391/)```
+<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /> | [Luis Yair Aquino Melo](https://www.linkedin.com/in/luis-yair-aquino-melo-1a291391/)
 
 <img src="https://img.shields.io/badge/gmail-D14836?&style=for-the-badge&logo=gmail&logoColor=white" /> | ```luisyairam.it@gmail.com```
 
