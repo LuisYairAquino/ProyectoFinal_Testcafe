@@ -1,8 +1,5 @@
 # Proyecto Final de Testcafe (Bootcamp QA Minds) :smile:
 
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/luis-yair-aquino-melo-1a291391/]
-
 <p align="center">
     <a href="https://devexpress.github.io/testcafe">
         <img src="https://qaminds.com/wp-content/uploads/2017/10/Logo_QAmindsLAB2-360x235.png" alt="qaminds">
