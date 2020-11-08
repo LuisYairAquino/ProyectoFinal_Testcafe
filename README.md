@@ -8,7 +8,7 @@
 
 ## Pre-requisites
 
-![Screenshot of the example product page](automationpractice.png)
+![Screenshot of the page](automationpractice.PNG)
 
 * **Install Node.js**: You have to install [Node.js](https://nodejs.org/es/download/), please ensure Node.js and [npm](https://www.npmjs.com/) are installed on your computer.
 * **How to set up?**: To install *TestCafe*: `npm install -g testcafe`
