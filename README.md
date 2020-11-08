@@ -17,7 +17,7 @@
 * **Controller Version**: For this project I was using [Git](https://git-scm.com/downloads)
 * **OS**: Windows 10 for this project, but you can use it for Linux or MacOS
 
-## Get Started
+## Get Started <img src="https://media2.giphy.com/media/hqWL97vhQBw2HPIbjW/giphy.gif?cid=ecf05e47madk65uop0gro4rbvoxmndhk4x7z7w8jlapwrrbk&rid=giphy.gif" width="50"></h2>
 
 In this repository you are able to find different kind of E2E testing on the 'http://automationpractice.com' page using testcafe as a testing framewrok. Please follow the steps below in case you want to clone my repo.
 
